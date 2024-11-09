@@ -1,6 +1,7 @@
 // components/footer/Footer.jsx
 import React from 'react';
-import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'; // Correct import for FontAwesome icons
+import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import brandLogo from '../../assets/brand-logo.png'; // Import the logo
 
 function Footer() {
   return (
@@ -8,8 +9,7 @@ function Footer() {
       <div className="container mx-auto px-6">
         {/* Logo Section */}
         <div className="flex justify-center mb-8">
-          <img src="../../assets/brand-logo.png" alt="Brand Logo" className="h-12" /> 
-
+          <img src={brandLogo} alt="Brand Logo" className="h-12" /> 
         </div>
 
         {/* Quick Links */}
