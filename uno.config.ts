@@ -18,5 +18,8 @@ export default defineConfig({
       'lora_medium': ['lora_medium', 'serif'],
       'lora_bold': ['lora_bold', 'serif'],
     },
+    breakpoints: {
+      'xs': '450px',
+    },
   },
 })

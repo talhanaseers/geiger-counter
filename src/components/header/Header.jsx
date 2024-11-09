@@ -18,6 +18,7 @@ function Header() {
                 alt="Γ-sense logo"
                 width={50}
                 height={50}
+                className="lt-xs:hidden"
             />
             {/* <span className="ms-2">Γ-sense</span> */}
         </Navbar.Brand>
