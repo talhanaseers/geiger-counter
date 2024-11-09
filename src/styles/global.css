@@ -5,8 +5,30 @@
     font-style: normal;
 
 }
-
+  
 body {
-    @apply bg-yellow-400;
-    @apply font-latin_modern_roman_caps10Ob;
-  }    
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+      -45deg,
+      #fde047 0%,
+      #facc15 25%,
+      #eab308 50%,
+      #facc15 75%,
+      #fde047 100%
+    );
+    background-size: 300% 300%;
+    animation: gradient-animation 15s ease-in-out infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
