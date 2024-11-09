@@ -8,7 +8,8 @@ function Footer() {
       <div className="container mx-auto px-6">
         {/* Logo Section */}
         <div className="flex justify-center mb-8">
-          <img src="/src/assets/brand-logo.png" alt="Brand Logo" className="h-12" />
+          <img src="../../assets/brand-logo.png" alt="Brand Logo" className="h-12" /> 
+
         </div>
 
         {/* Quick Links */}
