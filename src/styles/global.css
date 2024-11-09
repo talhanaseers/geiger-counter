@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'latin_modern_roman_caps10Ob';
+    src: url('../assets/fonts/lmromancaps10-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    @apply bg-yellow-400;
+    @apply font-latin_modern_roman_caps10Ob;
+  }    
