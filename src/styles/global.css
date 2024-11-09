@@ -3,10 +3,31 @@
     src: url('../assets/fonts/lmromancaps10-oblique-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-  
+
+@font-face {
+    font-family: 'lora_regular';
+    src: url('../assets/fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'lora_medium';
+  src: url('../assets/fonts/Lora-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lora_bold';
+  src: url('../assets/fonts/Lora-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+    font-family: 'lora_regular', sans-serif;
     margin: 0;
     min-height: 100vh;
     background: linear-gradient(

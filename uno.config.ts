@@ -14,6 +14,9 @@ export default defineConfig({
   theme: {
     fontFamily: {
       'latin_modern_roman_caps10Ob': ['latin_modern_roman_caps10Ob', 'serif'],
+      'lora_regular': ['lora_regular', 'serif'],
+      'lora_medium': ['lora_medium', 'serif'],
+      'lora_bold': ['lora_bold', 'serif'],
     },
   },
 })
