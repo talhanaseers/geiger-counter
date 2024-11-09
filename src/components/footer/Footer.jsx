@@ -5,11 +5,11 @@ import brandLogo from '../../assets/brand-logo.png'; // Import the logo
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-10">
+    <footer className="bg-gray-900 text-gray-300 py-10">
       <div className="container mx-auto px-6">
         {/* Logo Section */}
         <div className="flex justify-center mb-8">
-          <img src={brandLogo} alt="Brand Logo" className="h-12" /> 
+          <img src={brandLogo} alt="Brand Logo" className="h-12" />
         </div>
 
         {/* Quick Links */}
