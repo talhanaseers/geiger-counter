@@ -54,3 +54,59 @@ body {
       background-position: 50% 0%;
     }
   }
+
+
+html {
+  scroll-behavior: smooth;  /* Enable smooth scrolling in the browser */
+}
+
+/* Base styles for nav-links with hover and active effects */
+
+/* Default state for nav links */
+.nav-link.hover-effect {
+  color: #f5d300;  /* Default yellow color for text */
+  transition: color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
+  font-weight: normal;  /* Default font weight */
+}
+
+/* Hover effect - color change, scale, and font weight change */
+.nav-link.hover-effect:hover {
+  color: #ffcc00;  /* Slightly lighter yellow */
+  transform: scale(1.05);  /* Slight zoom effect */
+  font-weight: bold;  /* Bold text on hover */
+}
+
+/* Active effect - scale, shadow, and downward movement when clicked */
+.nav-link.hover-effect:active {
+  color: #ffcc00;  /* Slightly lighter yellow */
+  transform: scale(1.05) translateY(2px);  /* Slight down movement when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  /* Subtle shadow when clicked */
+}
+
+/* Navbar background and behavior */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Optional - Adjust navbar padding for spacing */
+.navbar-dark {
+  padding: 10px 0;  /* Add some padding to the navbar */
+}
+
+/* Optional - Add a subtle transition effect to navbar background on scroll */
+.navbar-dark {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-dark.scrolled {
+  background-color: #212121; /* Example darker shade when scrolled */
+}
+
+/* Make sure the page content doesn't overlap the navbar */
+body {
+  padding-top: 70px; /* Adjust this based on navbar height */
+}

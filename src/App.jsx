@@ -1,31 +1,33 @@
-import { useState } from 'react'
+// App.jsx
+import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/header/Header.jsx';
-import Banner from './components/header/Banner.jsx';
+import SiteNav from './components/header/SiteNav.jsx';
+import Home from './components/pages/Home.jsx';
+import Devices from './components/pages/Devices.jsx';
+import Visualize from './components/pages/Visualize.jsx';
+import Analyze from './components/pages/Analyze.jsx';
+import Footer from './components/footer/Footer.jsx';
 
 function App() {
   return (
-    <>
-      <div className="position-relative min-w-[400px]">
-        <Header/>
-        <Banner/>
+    <Router>
+      <div>
+        {/* Site Navigation */}
+        <SiteNav />
 
-        {/* Placeholders */}
-        <div className="h-48 flex items-center justify-center">
-            <h1 className="text-black text-center">Device Connection</h1>
+        {/* Main Content with scrollable sections */}
+        <div>
+          <Home />
+          <Devices />
+          <Visualize />
+          <Analyze />
         </div>
 
-        <div className="h-128 flex items-center justify-center">
-            <h1 className="text-black text-center">Graphs and Charts</h1>
-        </div>
-
-        <div className="h-128 flex items-center justify-center">
-            <h1 className="text-black text-center">AI Integration</h1>
-        </div>
-
+        {/* Footer */}
+        <Footer />
       </div>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
