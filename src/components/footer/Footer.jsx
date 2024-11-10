@@ -5,7 +5,7 @@ import brandLogo from '../../assets/brand-logo.png'; // Import the logo
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className="bg-black text-gray-300 py-10">
       <div className="container mx-auto px-6">
         {/* Logo Section */}
         <div className="flex justify-center mb-8">

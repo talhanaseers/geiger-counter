@@ -1,0 +1,43 @@
+{
+  "api": {
+    "pingAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "pingFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "pingFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_pingFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pingFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_pingFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "pingFunction"
+        }
+      ]
+    }
+  }
+}

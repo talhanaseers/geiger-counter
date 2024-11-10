@@ -37,6 +37,7 @@ function Visualize() {
           margin: '0 auto',
           zIndex: 1,
           transition: 'transform 0.3s ease-in-out',
+          
         }}
       >
         Visualize
